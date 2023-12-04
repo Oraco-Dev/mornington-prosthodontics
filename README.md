@@ -1,12 +1,8 @@
-![OA_Logo-01](https://github.com/Oraco-Dev/wp_template_theme/assets/134240689/bf5bb655-e019-4dd4-a156-dd2a17382c6d)
+Mornington Prosthodontics - WordPress Theme
 
-ORACO TEMPLATE WORDPRESS THEME - DO NOT OVERRIDE REPO TEMPALTE UNLESS ADDING BASE CONFIGURATION
+Templated Theme - https://github.com/Oraco-Dev/wp_template_theme/
 
-TO START NEW THEME CLONE INTO REPO AND - CHANGE REPO SO WHEN YOU ADD ONTO THEME AND PUSH CHANGES YOUR PUSHING IT INTO A PRIVATE CLIENT REPO.
-
-GIT CLONE https://github.com/Oraco-Dev/wp_template_theme/
-
-## Webpack 5 WordPress Theme Boilerplate
+## Webpack Boilerplate
 
 Provides a boilerplate WordPress theme that features a webpack 5 build for CSS/SASS and JavaScript. The webpack configuration is defined in the [webpack.config.js](./webpack.config.js), and the compiled assets are included in the WordPress theme via code in the [functions.php](./functions.php).
 
