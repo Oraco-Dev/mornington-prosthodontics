@@ -1,0 +1,31 @@
+.cta {
+  background-color: $light-gray;
+
+  &__outer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 100px 0px;
+
+    @include media(">=tablet") {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    h2 {
+      width: 100%;
+
+      @include media(">=tablet") {
+        width: 60%;
+      }
+    }
+
+    a {
+      margin-left: 200px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

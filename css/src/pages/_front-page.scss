@@ -1,0 +1,288 @@
+// BANNER
+.fp__banner {
+  display: relative;
+  background-color: #000000;
+  height: 120vh;
+
+  @include media(">=tablet") {
+    height: 86vh;
+  }
+
+  &-full {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+
+    @include media(">=tablet") {
+      flex-direction: row;
+    }
+
+    &-left {
+      display: none;
+
+      @include media(">=tablet") {
+        width: 50%;
+        display: block;
+      }
+    }
+
+    &-right {
+      background-image: url("http://morningtonpros.local/wp-content/uploads/2023/11/Mornington_Prosthodontics_Images1-min.jpg");
+      background-position: center center;
+      background-size: cover;
+      height: 300px;
+      width: 100%;
+
+      @include media(">=tablet") {
+        width: 50%;
+        height: 100%;
+      }
+    }
+  }
+
+  &-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100%;
+
+    &__inner {
+      padding-top: 8vh;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+      color: $white;
+
+      @include media(">=tablet") {
+        width: 45%;
+      }
+    }
+  }
+}
+
+// PILLARS
+.fp__pillars {
+  background-color: $light-gray;
+
+  &-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 20px 0px;
+
+    @include media(">=tablet") {
+      flex-direction: row;
+      padding: 70px;
+    }
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+
+      @include media(">=tablet") {
+        padding: 16px;
+      }
+
+      img {
+        height: 60px;
+      }
+    }
+  }
+}
+
+// DOCTOR
+.fp__doctor {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 140px;
+  height: 100%;
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 0px;
+    text-align: center;
+  }
+
+  &-alternate {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+
+    @include media(">=tablet") {
+      flex-direction: row;
+    }
+
+    &-left {
+      position: relative;
+      width: 100%;
+      min-height: 400px;
+
+      @include media(">=tablet") {
+        width: 50%;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+
+    &-right {
+      width: 100%;
+
+      @include media(">=tablet") {
+        width: 50%;
+        padding: 32px;
+      }
+    }
+  }
+
+  &-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+// PROCEDURES
+.fp__procedures {
+  background-color: $light-gray;
+  padding-bottom: 140px;
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px;
+    padding-bottom: 60px;
+  }
+
+  &-grid {
+    display: grid;
+    gap: 96px 32px;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include media(">=tablet") {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media(">=desktop") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+
+      img {
+        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        object-fit: cover;
+      }
+
+      h3 {
+        font-weight: 300;
+        letter-spacing: 0px;
+      }
+    }
+  }
+}
+
+// CLINIC
+.fp__clinic {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    opacity: 60%;
+  }
+
+  &-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 100px 0px;
+
+    h2,
+    h5 {
+      text-align: center;
+      color: $white;
+    }
+  }
+}
+
+.fp__coming-soon {
+  height: 88vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 96px;
+  overflow: hidden;
+  color: $white;
+
+  img {
+    z-index: 100;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  &-contact {
+    display: flex;
+    gap: 64px;
+
+    &-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      gap: 32px;
+
+      img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+      }
+    }
+  }
+}

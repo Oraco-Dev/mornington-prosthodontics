@@ -1,0 +1,20 @@
+.rf__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+  background-color: $light-gray;
+
+  &-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    color: $black;
+    text-align: center;
+  }
+}
+
+.rf__form {
+  padding: 70px 0px;
+}

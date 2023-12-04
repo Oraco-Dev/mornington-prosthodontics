@@ -1,0 +1,24 @@
+.button-primary {
+  width: fit-content;
+  border: solid 2.5px;
+  padding: 16px 24px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $dark-gray;
+    color: $dark-gray;
+    transition: 300ms all linear;
+  }
+
+  &.white {
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+      border-color: $medium-gray;
+      color: $medium-gray;
+      transition: 300ms all linear;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.accordion {
+  margin: auto;
+  max-width: 1000px;
+  padding-bottom: 140px;
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px;
+    padding-bottom: 24px;
+  }
+}
+
+.accordion-item {
+  margin-bottom: 24px;
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 24px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+
+    &-img {
+      height: 24px;
+      width: 24px;
+      transition: all 0.5s;
+
+      &.open {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__content {
+    padding-left: 16px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+
+    @include media(">desktop") {
+      width: 100%;
+    }
+
+    h3 {
+      padding: 16px;
+
+      @include media(">desktop") {
+        width: 100%;
+      }
+    }
+
+    &.open {
+      transition: all 0.5s linear;
+      max-height: 500px; // Set the desired expanded height
+      padding: 24px;
+      border-top: 2px solid black;
+    }
+  }
+}
+
+.menu-accordion {
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px;
+    padding-bottom: 24px;
+  }
+}
+
+.menu-accordion-item {
+  a {
+    text-transform: uppercase;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+
+    &-img {
+      height: 24px;
+      width: 24px;
+      transition: all 0.5s;
+
+      &.open {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 16px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+
+    @include media(">desktop") {
+      width: 100%;
+    }
+
+    h3 {
+      padding: 16px;
+
+      @include media(">desktop") {
+        width: 100%;
+      }
+    }
+
+    &-child-link {
+      font-size: 18px !important;
+    }
+
+    &.open {
+      transition: all 0.5s linear;
+      max-height: 500px; // Set the desired expanded height
+      padding: 24px;
+    }
+  }
+}

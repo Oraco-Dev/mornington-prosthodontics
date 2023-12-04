@@ -1,0 +1,77 @@
+#gform_1,
+#gform_2 {
+  .gfield_label {
+    margin-top: 10px;
+    font-family: $SourceSansPro;
+    color: $white;
+  }
+
+  input,
+  textarea {
+    padding: 24px;
+    border-radius: 0px;
+    border: 2px solid $medium-gray;
+    font-size: 16px;
+    font-family: $SourceSansPro;
+  }
+
+  #gform_submit_button_1 {
+    background-color: $black;
+    border: 2px solid $white;
+    font-size: 20px;
+    font-family: $SourceSansPro;
+    padding: 16px 32px;
+
+    &:hover {
+      border: 2px solid $medium-gray;
+      color: $medium-gray;
+      transition: 300ms all linear;
+    }
+  }
+
+  #gform_submit_button_2 {
+    background-color: transparent;
+    border: 2px solid $black;
+    color: $black;
+    font-size: 20px;
+    font-family: $SourceSansPro;
+    padding: 16px 32px;
+
+    &:hover {
+      border: 2px solid $medium-gray;
+      color: $medium-gray;
+      transition: 300ms all linear;
+    }
+  }
+}
+
+#gform_1 {
+  .gfield_label {
+    color: $white;
+  }
+
+  input,
+  textarea {
+    background-color: $dark-gray;
+    color: $white;
+  }
+}
+
+#gform_2 {
+  .gfield_label {
+    color: $black;
+  }
+
+  #input_2_22 {
+    padding: 0px;
+    cursor: pointer;
+  }
+}
+
+#gform_fields_1 {
+  display: block;
+}
+
+.gform_required_legend {
+  display: none;
+}

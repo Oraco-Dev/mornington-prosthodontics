@@ -1,0 +1,26 @@
+.logos {
+  &__outer {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media(">=tablet") {
+      gap: 32px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include media(">=desktop") {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    &-item {
+      width: 100%;
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        opacity: 60%;
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+}

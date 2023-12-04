@@ -1,0 +1,241 @@
+.ab__banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 70vh;
+  background-image: url("http://morningtonpros.local/wp-content/uploads/2023/11/Mornington_Prosthodontics_Image_5-min.jpg");
+  background-size: cover;
+
+  @include media(">=tablet") {
+    height: 80vh;
+  }
+
+  &-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    opacity: 60%;
+  }
+
+  &-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 20;
+    color: $white;
+  }
+}
+
+.ab__doctor {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 140px;
+  height: 100%;
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 0px;
+    text-align: center;
+  }
+
+  &-alternate {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+
+    @include media(">=tablet") {
+      flex-direction: row;
+    }
+
+    &-left {
+      position: relative;
+      width: 100%;
+
+      @include media(">=tablet") {
+        width: 50%;
+      }
+
+      img {
+        position: sticky;
+        height: 600px;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+
+    &-right {
+      width: 100%;
+
+      @include media(">=tablet") {
+        width: 50%;
+        padding: 32px;
+      }
+    }
+  }
+
+  &-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    a {
+      // text-decoration: underline;
+    }
+  }
+}
+
+.ab__team {
+  background-color: $light-gray;
+}
+
+.ab__outer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include media(">=tablet") {
+    flex-direction: row;
+  }
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+
+    justify-content: center;
+    text-align: left;
+    gap: 32px;
+    width: 100%;
+
+    @include media(">=tablet") {
+      width: 50%;
+      padding: 32px;
+      margin-left: 150px;
+    }
+
+    &-staff {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &-right {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+
+    @include media(">=tablet") {
+      width: 50%;
+      min-height: 600px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+}
+
+// PILLARS
+.ab__pillars {
+  background-color: $white;
+
+  &-title {
+    padding-top: 140px;
+  }
+
+  &-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 20px 0px;
+
+    @include media(">=tablet") {
+      flex-direction: row;
+      padding: 70px 0px 140px 0px;
+    }
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 32px;
+
+      img {
+        height: 60px;
+      }
+    }
+  }
+}
+
+.ab__logos {
+  background-color: $light-gray;
+}
+
+// CLINIC
+.ab__clinic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 500px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    opacity: 60%;
+  }
+
+  &-outer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 100px 0px;
+
+    a {
+      margin-left: 200px;
+    }
+
+    @include media(">=tablet") {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    h2,
+    h5 {
+      color: $white;
+    }
+  }
+}

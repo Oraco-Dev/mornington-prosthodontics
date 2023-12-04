@@ -1,0 +1,95 @@
+.testimonials {
+  background-color: $black;
+  color: $white;
+
+  &__outer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-bottom: 60px;
+
+    @include media(">=tablet") {
+      flex-direction: row;
+      gap: 32px;
+    }
+
+    &-left {
+      width: 100%;
+
+      @include media(">=tablet") {
+        width: 40%;
+      }
+    }
+
+    &-right {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      width: 100%;
+
+      @include media(">=tablet") {
+        width: 60%;
+      }
+
+      &-btn {
+        cursor: pointer;
+
+        button {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: transparent;
+          outline: none;
+          box-shadow: none;
+          border: none;
+          color: white;
+
+          img {
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonial {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#prevTestimonialButton {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: none;
+
+  img {
+    height: 20px;
+  }
+}
+
+#nextTestimonialButton {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  border: none;
+
+  img {
+    height: 20px;
+  }
+}

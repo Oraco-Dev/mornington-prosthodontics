@@ -1,0 +1,117 @@
+.footer {
+  background-color: $black;
+
+  // MAIN CONTENT
+  &__outer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include media(">=tablet") {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    @include media(">=desktop") {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 64px;
+    }
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      padding: 80px 0px;
+      color: $white;
+
+      img {
+        height: 60px;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  // DIVIDER
+  &__divider {
+    background-color: #fff;
+    opacity: 20%;
+    height: 2px;
+  }
+
+  &__bottom {
+    &-outer {
+      display: grid;
+      padding: 48px 0px;
+      gap: 48px;
+      grid-template-columns: repeat(1, 1fr);
+
+      @include media(">=tablet") {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include media(">=desktop") {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+        color: $white;
+
+        @include media(">=tablet") {
+          align-items: center;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        color: $white;
+
+        img {
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  //   TERMS * CONDITIONS
+  &__terms {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 0px;
+
+    @include media(">=tablet") {
+      justify-content: center;
+    }
+
+    &-outer {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      @include media(">tablet") {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a {
+        color: $black;
+      }
+    }
+  }
+}

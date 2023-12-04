@@ -1,0 +1,92 @@
+// add class to all elements that fade in and control how the element looks BEFORE the fade in is applied
+.fade-content {
+  opacity: 0;
+  visibility: hidden;
+
+  &.delay-100 {
+    transition-delay: 100ms;
+  }
+
+  &.delay-200 {
+    transition-delay: 200ms;
+  }
+
+  &.delay-300 {
+    transition-delay: 300ms;
+  }
+
+  &.delay-400 {
+    transition-delay: 400ms;
+  }
+
+  &.delay-500 {
+    transition-delay: 500ms;
+  }
+
+  &.delay-600 {
+    transition-delay: 600ms;
+  }
+
+  &.delay-700 {
+    transition-delay: 700ms;
+  }
+
+  &.delay-800 {
+    transition-delay: 800ms;
+  }
+
+  &.delay-900 {
+    transition-delay: 900ms;
+  }
+
+  &.delay-1000 {
+    transition-delay: 1000ms;
+  }
+
+  &.delay-1100 {
+    transition-delay: 1100ms;
+  }
+
+  &.delay-1200 {
+    transition-delay: 1200ms;
+  }
+
+  &.delay-1300 {
+    transition-delay: 1300ms;
+  }
+
+  &.delay-1400 {
+    transition-delay: 1400ms;
+  }
+
+  &.delay-1500 {
+    transition-delay: 1500ms;
+  }
+
+  &.delay-1600 {
+    transition-delay: 1600ms;
+  }
+
+  &.delay-1700 {
+    transition-delay: 1700ms;
+  }
+
+  &.delay-1800 {
+    transition-delay: 1800ms;
+  }
+
+  &.delay-1900 {
+    transition-delay: 1900ms;
+  }
+
+  &.delay-2000 {
+    transition-delay: 2000ms;
+  }
+}
+
+// control what happens when the element is in view and apply fade in styles
+.in-view {
+  opacity: 1;
+  visibility: visible;
+  transition: all 1000ms ease-in-out;
+}

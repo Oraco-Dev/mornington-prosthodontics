@@ -1,0 +1,33 @@
+// colors
+@import "./colors/colors";
+
+// fonts
+@import "./fonts/fonts";
+
+// helpers
+@import "./helpers/vars";
+@import "./helpers/mixins";
+@import "./helpers/breakpoints";
+@import "./helpers/container";
+
+// components
+@import "./components/globals/header";
+@import "./components/globals/footer";
+@import "./components/globals/animations";
+@import "./components/globals/menu";
+@import "./components/elements/buttons";
+@import "./components/elements/testimonials";
+@import "./components/elements/accordion";
+@import "./components/elements/call-to-action";
+@import "./components/elements/logos";
+@import "./components/elements/forms";
+@import "./components/elements/back-to-top";
+
+// layout & pages
+@import "./base";
+@import "./pages/front-page";
+@import "./pages/about-page";
+@import "./pages/services-page";
+@import "./pages/contact-page";
+@import "./pages/referrals-page";
+@import "./pages/privacy-policy-page";
